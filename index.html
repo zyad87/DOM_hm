@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="leftSection">
+      <div class="imageContainer">
+        <img
+          id="profileImage"
+          class="profileImage"
+          src="https://media.licdn.com/dms/image/v2/D5603AQHv6LsdiUg1kw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1695167344576?e=1731542400&v=beta&t=wlnapoi74INZQz59PaBT-hPADh6GNrApN8ajVwjnQ8k"
+          alt="Profile Image 1"
+          onmouseover="showImage()"
+        />
+        <img
+          id="profileImage2"
+          class="profileImage hidden"
+          src="https://media.licdn.com/dms/image/v2/C5603AQEqSzA5NjrWQw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1552068056767?e=1731542400&v=beta&t=5yIaBqV6pnxiLDGwlwWJeoZ8LpdHt2hf3XyH2vaWUnc"
+          alt="Profile Image 2"
+          onmouseout="hideImage()"
+        />
+      </div>
+      <!-- contact Section -->
+      <div class="contactContainer">
+        <div class="contactHeader"><h2>CONTACT</h2></div>
+        <ul onmouseover="showContact()" class="contactSection" id="contact1">
+          <li><span class="fa fa-phone"></span>+123-456-7890</li>
+          <li>
+            <span class="fa fa-regular fa-envelope"></span
+            >hello@reallygreatsite.com
+          </li>
+          <li>
+           123 Anywhere St., Any
+            City
+          </li>
+          <li>
+            <span class="fa fa-regular fa-envelope"></span
+            >www.reallygreatsite.com
+          </li>
+        </ul>
+        <ul
+          onmouseout="hideContact()"
+          class="contactSection hidden"
+          id="contact2"
+        >
+          <li><span class="fa fa-phone"></span>+876-765-4321</li>
+          <li>
+            <ul>
+                <li>
+                  <span class="fa fa-regular fa-envelope"></span> info@yourdomain.com
+                </li>
+                <li>
+                    456 Innovation Avenue, London, United Kingdom
+                </li>
+                <li>
+                  <span class="fa fa-regular fa-globe"></span> www.yourwebsite.com
+                </li>
+              </ul>              
+        </ul>
+      </div>
+      <!-- education Section -->
+      <div class="educationContainer">
+        <div class="educationHeader"><h2>EDUCATION</h2></div>
+        <div
+          class="educationSection"
+          onmouseover="showEducation()"
+          id="education1"
+        >
+          <div class="educationInfo">
+            <p>2029 - 2030</p>
+            <p>WARDIERE UNIVERSITY</p>
+            <span
+              ><i
+                class="fa fa-solid fa-circle fa-2xs"
+                style="margin-left: 10px"
+              ></i>
+              master of business Managment</span
+            >
+          </div>
+          <div class="educationInfo" style="margin-bottom: 20px;">
+            <p>2029 - 2030</p>
+            <p>WARDIERE UNIVERSITY</p>
+            <p>
+              <i class="fa fa-solid fa-circle fa-2xs" style="margin-left: 10px"></i>
+              Master of Business Management
+            </p>
+          </div>
+          
+          <div class="educationInfo">
+            <p>2021 - 2025</p>
+            <p>Harvard University</p>
+            <p>
+              <i class="fa fa-solid fa-circle fa-2xs" style="margin-left: 10px"></i>
+              Bachelor of Computer Science
+            </p>
+            <p>
+              <i class="fa fa-solid fa-circle fa-2xs" style="margin-left: 10px"></i>
+              GPA: 3.9 / 4.0
+            </p>
+          </div>
+          
+        </div>
+        <div
+          class="educationSection hidden"
+          onmouseout="hideEducation()"
+          id="education2"
+        >
+        <div class="educationInfo" style="margin-top: 20px">
+            <p>2018 - 2022</p>
+            <p>Stanford University</p>
+            <p>
+              <i class="fa fa-solid fa-circle fa-2xs" style="margin-left: 10px;"></i>
+              Bachelor of Computer Science
+            </p>
+            <p>
+              <i class="fa fa-solid fa-circle fa-2xs" style="margin-left: 10px;"></i>
+              GPA: 3.9 / 4.0
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      <!-- skills Section -->
+      <div class="skillsContainer">
+        <div class="educationHeader"><h2>SKILLS</h2></div>
+        <ul onmouseover="showSkills()" class="listSkills" id="listSkills1">
+          <li>Project Managment</li>
+          <li>Public Relations</li>
+          <li>Teamwork</li>
+          <li>Time Management</li>
+          <li>Leadership</li>
+          <li>Effictive Communication</li>
+          <li>Critical Thinking</li>
+        </ul>
+        <ul
+          onmouseout="hideSkills()"
+          class="listSkills hidden"
+          id="listSkills2"
+        >
+        <li>Data Analysis</li>
+        <li>Backend Development</li>
+        <li>Team Collaboration</li>
+        <li>Python Programming</li>
+        <li>Project Management</li>
+        <li>Time Management</li>
+        <li>Strategic Planning</li>
+        </ul>
+      </div>
+      <!-- language Section -->
+      <div class="languageContainer">
+        <div class="educationHeader"><h2>LANGUAGE</h2></div>
+        <ul
+          onmouseover="showLanguages()"
+          class="listLanguage"
+          id="languageList1"
+        >
+          <li>English (Fluent)</li>
+          <li>French (Fluent)</li>
+          <li>Germany (Fluent)</li>
+          <li>Spanish (Intermediate)</li>
+        </ul>
+        <ul
+          onmouseout="hideLanguages()"
+          class="listLanguage hidden"
+          id="languageList2"
+        >
+        <li>English (Native)</li>
+        <li>Japanese (Fluent)</li>
+        <li>Arabic (Advanced)</li>
+        <li>Italian (Beginner)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rightSection">
+      <div class="topSectionContainer">
+        <div class="topSection" onmouseover="showName()" id="nameSection1">
+          <div class="nameSection">
+            <h1 style="color: #707070 ;font-weight: 600">RICHARD</h1>
+            <h1 style="font-weight: 500">SANCHEZ</h1>
+          </div>
+          <div class="role">
+            <h3 style="font-weight: 200">MARKETING MANAGER</h3>
+          </div>
+          <div class="lineSeperator"></div>
+        </div>
+        <div
+          class="topSection hidden"
+          onmouseout="hideName()"
+          id="nameSection2"
+        >
+          <div class="nameSection">
+            <h1 style="color: #707070; font-weight: 600">DAVID</h1>
+            <h1 style="font-weight: 500">MILLER</h1>
+          </div>
+          <div class="role">
+            <h3 style="font-weight: 200">Data Scientist</h3>
+        </div>
+          <div class="lineSeperator"></div>
+        </div>
+      </div>
+      <div class="profileSectionContainer">
+        <div class="cvHeader"><h2>PROFILE</h2></div>
+        <p
+          class="profileContent"
+          id="profileContent1"
+          onmouseover="showProfile()"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          exercitationem facere maxime, reiciendis ratione ea adipisci
+          voluptatum eaque eius architecto aperiam libero omnis necessitatibus
+          qui? Id aliquid quos maiores quasi dolorem ad voluptatem sint iste
+          dignissimos corporis? Soluta, voluptatibus praesentium non nam tenetur
+          sed velit animi quidem, distinctio dignissimos iure.
+        </p>
+        <p
+          class="profileContent hidden"
+          id="profileContent2"
+          onmouseout="hideProfile()"
+        >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae ligula a nisl sodales tristique. Praesent volutpat, leo non tempus ultricies, lorem urna volutpat metus, non interdum felis libero at libero. Nullam facilisis magna ut libero pharetra, ac tincidunt metus facilisis. In aliquet mi vitae metus facilisis, at pharetra lorem tincidunt. Integer interdum magna ac turpis vehicula, nec vehicula risus varius.
+
+        </p>
+      </div>
+      <div class="experienceContainer">
+        <div style="margin-bottom: 0.5rem" class="cvHeader">
+          <h2>WORK EXPERIENCE</h2>
+        </div>
+        <div
+          class="experience1"
+          id="experience1"
+          onmouseover="showExperience()"
+        >
+          <ul class="experienceContainerlist">
+            <li>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                "
+              >
+                <div>
+                  <h3 style="color: rgb(44, 42, 42)">Borcelle Studio</h3>
+                  <span class="job-title">Marketing Manager & Specialist</span>
+                </div>
+                <div class="date">2030-PRESENT</div>
+              </div>
+              <ul class="job-description">
+                <li>
+                  Develop and execute comprehensive marketing strategies and
+                  campaigns that align with the company's goals and objectives.
+                </li>
+                <li>
+                  Lead, mentor, and manage a high-performing marketing team,
+                  fostering a collaborative and results-driven work environment.
+                </li>
+                <li>
+                  Monitor brand consistency across marketing channels and
+                  materials.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="experienceContainerlist">
+            <li>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                "
+              >
+                <div>
+                  <h3 style="color: rgb(44, 42, 42)">Fauget Studio</h3>
+                  <span class="job-title">Marketing Manager & Specialist</span>
+                </div>
+                <div class="date">2025 - 2029</div>
+              </div>
+              <ul class="job-description">
+                <li>
+                  Create and manage the marketing budget, ensuring efficient
+                  allocation of resources and optimizing ROI
+                </li>
+                <li>
+                  Oversee market research to identify emerging trends, customer
+                  needs, and competitors strategies.
+                </li>
+                <li>
+                  Monitor brand consistency across marketing channels and
+                  materials.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="experienceContainerlist">
+            <li>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                "
+              >
+                <div>
+                  <h3 style="color: rgb(44, 42, 42)">Studio Shodwe</h3>
+                  <span class="job-title">Marketing Manager & Specialist</span>
+                </div>
+                <div class="date">2024 - 2025</div>
+              </div>
+              <ul class="job-description">
+                <li>
+                  Create and manage the marketing budget, ensuring efficient
+                  allocation of resources and optimizing ROI
+                </li>
+                <li>
+                  Oversee market research to identify emerging trends, customer
+                  needs, and competitors strategies.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+        class="experience2 hidden"
+        id="experience2"
+        onmouseout="hideExperience()"
+      >
+        <ul class="experienceContainerlist">
+          <li>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <div>
+                <h3 style="color: rgb(44, 42, 42)">Google</h3>
+                <span class="job-title">Full Stack Developer</span>
+              </div>
+              <div class="date">2022-PRESENT</div>
+            </div>
+            <ul class="job-description">
+              <li>Developed and maintained scalable web applications</li>
+              <li>
+                Collaborated with cross-functional teams to design and implement new
+                features
+              </li>
+              <li>Utilized React and Node.js to build efficient backend services</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="experienceContainerlist">
+          <li>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <div>
+                <h3 style="color: rgb(44, 42, 42)">Amazon</h3>
+                <span class="job-title">Backend Engineer</span>
+              </div>
+              <div class="date">2020 - 2022</div>
+            </div>
+            <ul class="job-description">
+              <li>Contributed to the development of cloud-based solutions</li>
+              <li>
+                Optimized backend systems for performance and scalability
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+      </div>
+      <div class="referenceContainer">
+        <div class="cvHeader"><h2>REFERENCE</h2></div>
+        <div onmouseover="showRefrence()" class="reference1" id="reference1">
+          <div class="referenceWrapper">
+            <div class="referenceContent">
+              <h3>Estelle Darcy</h3>
+              <h3>Wardiere INC. / CTO</h3>
+              <p>phone: 123-456-7890</p>
+              <p>email: hello@reallygreatsite.com</p>
+            </div>
+            <div class="referenceContent">
+              <h3>Estelle Darcy</h3>
+              <h3>Wardiere INC. / CTO</h3>
+              <p>phone: 123-456-7890</p>
+              <p>email: hello@reallygreatsite.com</p>
+            </div>
+          </div>
+        </div>
+        <div
+          onmouseout="hideRefrence()"
+          class="reference2 hidden"
+          id="reference2"
+        >
+          <div class="referenceWrapper">
+            <div class="referenceContent">
+                <h3>John Doe</h3>
+                <h3>Tech Solutions / CEO</h3>
+                <p>phone: 987-654-3210</p>
+                <p>email: john.doe@techsolutions.com</p>
+                </div>
+                <div class="referenceContent">
+                <h3>Jane Smith</h3>
+                <h3>Innovate Corp / CTO</h3>
+                <p>phone: 555-123-4567</p>
+                <p>email: jane.smith@innovatecorp.com</p>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./min.js"></script>
+</html>

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.leftSection {
+  background-color: #163853;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.profileImage {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.contactContainer,
+.skillsContainer,
+.educationContainer,
+.languageContainer {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contactHeader,
+.educationHeader {
+  border-bottom: 1px solid white;
+  margin-bottom: 1rem;
+}
+
+.contactSection,
+.listSkills,
+.listLanguage {
+  list-style: none;
+  padding: 0;
+}
+
+.contactSection li,
+.listSkills li,
+.listLanguage li {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.rightSection {
+  width: 100%;
+  padding: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.nameSection {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.role {
+  margin-top: 0.5rem;
+}
+
+.lineSeperator {
+  width: 30%;
+  border-bottom: 5px solid #707070;
+}
+
+.cvHeader {
+  color: #163853;
+  width: 100%;
+  border-bottom: 2px solid #163853;
+  padding: 5px 0;
+}
+
+.profileSectionContainer,
+.experienceContainer,
+.referenceContainer {
+  width: 100%;
+  padding: 1rem;
+}
+
+.job-description {
+  margin-left: 1rem;
+}
+
+.job-title,
+.date {
+  font-weight: bold;
+  color: gray;
+}
+
+.referenceWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .leftSection {
+    width: 25%;
+    padding: 4rem 2rem;
+  }
+
+  .rightSection {
+    width: 75%;
+    padding: 4rem;
+  }
+
+  .profileImage {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .lineSeperator {
+    width: 50%;
+  }
+}
